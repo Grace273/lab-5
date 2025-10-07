@@ -29,6 +29,9 @@ public class Config {
      * Get the LogGradeUseCase object.
      * @return LogGradeUseCase object.
      */
+    public GetTopGradeUseCase getTopGradeUseCase() {
+        return new GetTopGradeUseCase(gradeDataBase);
+    }
     public LogGradeUseCase logGradeUseCase() {
         return new LogGradeUseCase(gradeDataBase);
     }
